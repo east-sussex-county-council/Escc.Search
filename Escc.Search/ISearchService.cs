@@ -1,4 +1,6 @@
 ﻿
+using System.Threading.Tasks;
+
 namespace Escc.Search
 {
     /// <summary>
@@ -11,6 +13,6 @@ namespace Escc.Search
         /// </summary>
         /// <param name="query">The query.</param>
         /// <returns></returns>
-        ISearchResponse Search(ISearchQuery query);
+        Task<ISearchResponse> SearchAsync(ISearchQuery query);
     }
 }
